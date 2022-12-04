@@ -116,6 +116,7 @@ contractAddress.json
 !pip install protobuf==3.19.5 // Google Colabの場合必要
 ```
 
+4. 以上でApp.jsが実装したmyContractTx.solのコントラクトを動作させられるようになります。
 
 ## 参考
 1. Expo (React Native) and Web3.js
