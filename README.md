@@ -111,12 +111,35 @@ contractAddress.json
 注意: 以下のようにPython3のパッケージをインストールする必要あり
 ```
 !pip install eth_account
-!pip install web3
 !pip uninstall protobuf // Google Colabの場合必要
 !pip install protobuf==3.19.5 // Google Colabの場合必要
+!pip install web3
 ```
 
 4. 以上でApp.jsが実装したmyContractTx.solのコントラクトを動作させられるようになります。
+
+## コントラクトの仕様
+
+- transfer(_value, _to):
+
+_toで指定されたアドレスに、_valueだけ送金
+
+- getBalance(_address):
+
+_addressで指定されたアドレスの残高を確認
+
+- setOwner(_nameHash):
+
+名前のハッシュとアドレスを結びつける。
+
+- getOwner(_nameHash):
+
+名前のハッシュを入力として、結びつけられたユーザーのアドレスを返す。
+
+## 接続するEthereumネットワークについて
+
+URI: http://153.122.10.129:8545
+
 
 ## 参考
 1. Expo (React Native) and Web3.js
